@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Uploaded Successfully!!</title>
-
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 </head>
-<body>
+<body class="bg-secondary">
 <br>
 <br>
 <br>
-<img src="static\{{img}}">
+<img class="mx-auto d-block" src="static\{{img}}">
+
 <br>
-Image Uploaded Successfully
+<!--Image Successful-->
+<div class="card text-center bg-success h4" style="margin-left: 350px; margin-right:350px;">
+    <div class="card-body">
+        Image Uploaded Successfully
+    </div>
+  </div>
 
 <br>
 <br>
-Result :
-<p>Disease Name  : {{name}}</p>
-<p>Accuracy  : {{accuracy}}</p>
-<p>Solution  : {{soln}}</p>
+
+<!--Results-->
+<div class="card ms-4 mx-4 mb-lg-3 bg-info">
+    <div class="card-body">
+        <p class="h5">Results :</p>
+        <p>Disease Name  : {{name}}</p>
+        <p>Accuracy  : {{accuracy}}</p>
+        <p>Solution  : <br> {{soln}}</p>
+    </div>
+  </div>
+
 </body>
 </html>
